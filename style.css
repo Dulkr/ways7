@@ -1,0 +1,61 @@
+
+:root {
+    --back: white;
+    --font: black;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    /* background-image: url("1.png"); */
+    /* height: 3000px; */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-direction: row-reverse;
+    right: 21px;
+    position: absolute;
+    top: 35px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border: 20px solid var(--font);
+    border-radius: 30px;
+    background-color: var(--font);
+    color: var(--back);
+}
+
+.item {
+    color: var(--font);
+    margin: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.img,
+.img * {
+    height: 90px;
+    position: fixed;
+    left: 30px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: -webkit-fill-available;
+    height: fit-content;
+}
